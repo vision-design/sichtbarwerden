@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matcha Clone</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f5f5f5;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 48px;
+    }
+
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 500;
+    }
+
+    .contact-button {
+      background: #000;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 18px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 48px;
+      margin-bottom: 64px;
+      gap: 48px;
+    }
+
+    .hero {
+      background: white;
+      border-radius: 24px;
+      padding: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .hero h1 {
+      font-size: 64px;
+      margin: 0;
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .hero-button {
+      margin-top: 24px;
+      padding: 12px 24px;
+      border-radius: 24px;
+      background: linear-gradient(90deg, #FFD3A5 0%, #FD6585 100%);
+      color: #000;
+      border: none;
+      font-weight: 600;
+    }
+
+    .hero img {
+      border-radius: 24px;
+      width: 100%;
+      max-width: 460px;
+      object-fit: cover;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 48px;
+      gap: 32px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .card:nth-child(1) {
+      background: #eae9f6;
+      font-size: 18px;
+    }
+
+    .card:nth-child(3) {
+      background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%);
+    }
+
+    .avatars {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .avatars img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .meet-text {
+      margin-left: 16px;
+      font-weight: 600;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: 800; font-size: 24px">matcha</div>
+    <nav>
+      <a href="#">projects</a>
+      <a href="#">about</a>
+      <a href="#">team</a>
+      <a href="#" class="contact-button">contact us</a>
+    </nav>
+  </header>
+
+  <section class="grid">
+    <div>
+      <h1>Make<br />something<br />great</h1>
+      <button class="hero-button">Let's go</button>
+    </div>
+    <div>
+      <img src="https://picsum.photos/id/1011/600/400" alt="Placeholder" />
+    </div>
+  </section>
+
+  <section class="card-grid">
+    <div class="card">
+      This example is inspired by the work of Halo Lab, a design agency based in Ukraine.
+      <br /><br />
+      <small>dribbble.com/halolab</small>
+    </div>
+    <div class="card">
+      <strong>We help businesses to make their brands shine on all platforms.</strong>
+      <div class="avatars">
+        <img src="https://picsum.photos/id/1027/40" alt="avatar" />
+        <img src="https://picsum.photos/id/1025/40" alt="avatar" />
+        <img src="https://picsum.photos/id/1021/40" alt="avatar" />
+        <span class="meet-text">MEET OUR DESIGNERS</span>
+      </div>
+    </div>
+    <div class="card"></div>
+  </section>
+</body>
+</html>
