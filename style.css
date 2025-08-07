@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #121212;
+  background: #f5f5f7;
   font-family: 'Montserrat', Arial, sans-serif;
   color: #fff;
 }
@@ -17,7 +17,7 @@ header {
 .logo {
   font-size: 2rem;
   font-weight: 900;
-  color: white;
+  color: #121212;
 }
 nav {
   display: flex;
@@ -25,7 +25,7 @@ nav {
   align-items: center;
 }
 nav a {
-  color: white;
+  color: #121212;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
@@ -33,8 +33,8 @@ nav a {
   border-radius: 999px;
 }
 nav .contact {
-  background: #fff;
-  color: #000;
+  background: #121212;
+  color: #fff;
   font-weight: 600;
   font-size: 1rem;
   padding: 10px 26px;
@@ -47,66 +47,136 @@ main {
 }
 
 .grid-container {
+  background: #121212;
+  border-radius: 28px;
+  padding: 30px 30px 32px 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 24px;
-  max-width: 1100px;
+  grid-template-columns: 2fr 1.1fr 1fr;
+  grid-template-rows: 320px 210px;
+  gap: 28px;
+  max-width: 1050px;
   width: 100%;
-}
-
-.card {
-  background: white;
-  color: #000;
-  border-radius: 24px;
-  padding: 32px;
   box-sizing: border-box;
 }
 
-.hero-card h1 {
-  font-size: 3rem;
-  margin-bottom: 24px;
+/* Grid placement */
+.hero-card {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  border-radius: 28px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #fff;
+  color: #121212;
+  padding: 50px 44px 0 44px;
 }
-
-.hero-card button {
-  background: linear-gradient(to right, #ffe1c9, #ff7cae);
-  border: none;
-  border-radius: 999px;
-  padding: 12px 32px;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
+.image-card {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  border-radius: 0 28px 0 0;
+  background: #fff;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  position: relative;
 }
-
 .image-card img {
   width: 100%;
-  height: auto;
-  border-radius: 24px;
+  height: 100%;
+  object-fit: cover;
   display: block;
+  border-radius: 0 28px 0 0;
+  filter: grayscale(100%);
+}
+
+.quote-card {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  background: #e8e7fa;
+  color: #121212;
+  border-radius: 0 0 0 28px;
+  padding: 32px 34px 32px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.quote-card span {
+  margin-top: 22px;
+  color: #757575;
+  font-size: 0.92rem;
+}
+
+.team-card {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: #fff;
+  color: #121212;
+  border-radius: 0 0 0 0;
+  padding: 30px 24px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .avatars {
   display: flex;
-  gap: 12px;
-  margin: 12px 0;
+  gap: 10px;
+  margin: 10px 0 8px 0;
 }
 .avatars img {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid white;
+  border: 2px solid #fff;
 }
 
 .gradient-card {
-  background: linear-gradient(135deg, #ffe1c9, #ff90c2, #93e3f7);
-  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  border-radius: 0 0 28px 0;
+  background: linear-gradient(135deg, #ffe1c9 0%, #ff90c2 60%, #93e3f7 100%);
 }
 
-@media (min-width: 1000px) {
-  .hero-card { grid-column: 1; grid-row: 1; }
-  .image-card { grid-column: 2; grid-row: 1; }
-  .quote-card { grid-column: 1; grid-row: 2; }
-  .team-card { grid-column: 2; grid-row: 2; }
-  .gradient-card { grid-column: 2; grid-row: 2; margin-top: 160px; }
+.hero-card h1 {
+  font-size: 3.4rem;
+  font-weight: 900;
+  margin: 0 0 36px 0;
+  line-height: 1.06;
+  letter-spacing: -2px;
 }
+.hero-card button {
+  background: linear-gradient(90deg, #ffe1c9 0%, #ff7cae 100%);
+  border: none;
+  border-radius: 999px;
+  color: #181818;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 15px 40px;
+  margin-bottom: 18px;
+  cursor: pointer;
+  box-shadow: 0 2px 18px #ffb2d680;
+  transition: transform 0.12s;
+  font-family: inherit;
+}
+.hero-card button:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 16px;
+    padding: 16px;
+    max-width: 99vw;
+  }
+  .hero-card, .image-card, .quote-card, .team-card, .gradient-card {
+    border-radius: 18px !important;
+  }
+}
+
+::-webkit-scrollbar { width: 8px; background: #f5f5f7; }
+::-webkit-scrollbar-thumb { background: #e0e0e0; border-radius: 6px; }
