@@ -3,7 +3,7 @@ body {
   padding: 0;
   background: #f5f5f7;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #151515;
+  color: #181818;
 }
 
 header {
@@ -26,16 +26,16 @@ nav {
   align-items: center;
 }
 nav a {
-  color: #151515;
+  color: #181818;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  padding: 6px 16px;
+  padding: 7px 16px;
   border-radius: 999px;
   transition: background 0.2s;
 }
 nav .contact {
-  background: #151515;
+  background: #181818;
   color: #fff;
   font-weight: 600;
   font-size: 1rem;
@@ -46,7 +46,7 @@ nav .contact {
 .main-grid {
   display: grid;
   grid-template-columns: 1.3fr 1.1fr 1fr;
-  grid-template-rows: 360px 180px;
+  grid-template-rows: 370px 180px;
   gap: 24px;
   padding: 36px 48px 0 48px;
   max-width: 1200px;
@@ -57,25 +57,26 @@ nav .contact {
   grid-column: 1/2;
   grid-row: 1/2;
   background: #f5f5f7;
-  border-radius: 24px 0 0 0;
-  padding: 48px 44px 0 44px;
+  border-radius: 36px 0 0 0;
+  padding: 56px 44px 0 44px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   box-sizing: border-box;
+  box-shadow: 0 0 0 2px #15151510;
 }
 .hero-card h1 {
-  font-size: 3.6rem;
+  font-size: 4rem;
   font-weight: 900;
   margin: 0 0 38px 0;
-  line-height: 1.06;
+  line-height: 1.08;
   letter-spacing: -2px;
 }
 .hero-card button {
-  background: linear-gradient(90deg, #ffd6b7 0%, #ff7cae 100%);
+  background: linear-gradient(90deg, #ffe1c9 0%, #ff7cae 100%);
   border: none;
   border-radius: 999px;
-  color: #262626;
+  color: #181818;
   font-weight: 700;
   font-size: 1.1rem;
   padding: 14px 40px;
@@ -83,6 +84,7 @@ nav .contact {
   cursor: pointer;
   box-shadow: 0 2px 18px #ffb2d680;
   transition: transform 0.12s;
+  font-family: inherit;
 }
 .hero-card button:hover {
   transform: scale(1.05);
@@ -92,66 +94,81 @@ nav .contact {
   grid-column: 2/4;
   grid-row: 1/2;
   background: #f5f5f7;
-  border-radius: 0 24px 0 0;
+  border-radius: 0 36px 0 0;
   position: relative;
   display: flex;
   align-items: stretch;
   overflow: hidden;
+  min-width: 0;
+  box-shadow: 0 0 0 2px #15151510;
 }
 .hero-image-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 24px 0 0;
+  border-radius: 0 36px 0 0;
   filter: grayscale(100%);
 }
 .decor-text {
   position: absolute;
   right: 30px;
-  bottom: 0;
-  font-size: 4.5rem;
-  font-weight: 700;
+  top: 36px;
+  font-size: 4.6rem;
+  font-weight: 900;
   color: #181818;
   opacity: 0.11;
   transform: rotate(-22deg);
-  letter-spacing: 0.05em;
+  letter-spacing: 0em;
   pointer-events: none;
+  font-family: 'Montserrat', Arial, sans-serif;
 }
 .decor-circle {
   position: absolute;
   left: 32px;
-  top: 32px;
-  width: 24px;
-  height: 24px;
-  background: #151515;
+  top: 42px;
+  width: 22px;
+  height: 22px;
+  background: #181818;
   border-radius: 50%;
-  opacity: 0.10;
+  opacity: 0.12;
 }
-.decor-quote {
+.decor-star {
   position: absolute;
-  right: 70px;
-  top: 40px;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #151515;
-  opacity: 0.2;
+  right: 48px;
+  top: 98px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #181818;
+  opacity: 0.18;
+  font-family: Arial, sans-serif;
+}
+.decor-dot {
+  position: absolute;
+  right: 40px;
+  bottom: 36px;
+  width: 13px;
+  height: 13px;
+  background: #181818;
+  border-radius: 50%;
+  opacity: 0.13;
 }
 
 .quote-card {
   grid-column: 1/2;
   grid-row: 2/3;
   background: #e8e7fa;
-  border-radius: 0 0 0 24px;
+  border-radius: 0 0 0 36px;
   box-sizing: border-box;
   padding: 36px 34px 32px 34px;
   font-size: 1.18rem;
-  color: #151515;
+  color: #181818;
   font-weight: 400;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 156px;
+  box-shadow: 0 0 0 2px #15151510;
 }
 .quote-card span {
   margin-top: 22px;
@@ -162,7 +179,6 @@ nav .contact {
   position: absolute;
   right: 22px;
   top: 16px;
-  opacity: 0.18;
 }
 
 .team-card {
@@ -173,12 +189,13 @@ nav .contact {
   box-sizing: border-box;
   padding: 34px 34px 20px 34px;
   font-size: 1.09rem;
-  color: #151515;
+  color: #181818;
   font-weight: 400;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   min-height: 156px;
+  box-shadow: 0 0 0 2px #15151510;
 }
 .team-card p {
   margin: 0 0 16px 0;
@@ -210,12 +227,12 @@ nav .contact {
 .gradient-card {
   grid-column: 3/4;
   grid-row: 2/3;
-  border-radius: 0 0 24px 0;
+  border-radius: 0 0 36px 0;
   background: linear-gradient(135deg, #ffe1c9 0%, #ff90c2 60%, #93e3f7 100%);
   min-height: 156px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 16px #ffd6b736;
+  box-shadow: 0 0 0 2px #15151510;
 }
 .gradient-card:after {
   content: "";
