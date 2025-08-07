@@ -1,100 +1,128 @@
-/* Matcha Website Clone Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Satoshi', sans-serif;
-  background-color: #f7f7f7;
-  color: #0d0d0d;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-  font-size: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline;
-}
-
-a {
-  text-decoration: none;
-  color: #0d0d0d;
-}
-
-a.button {
-  background: black;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
+  font-family: 'Outfit', sans-serif;
+  background: #f6f6f7;
+  padding: 20px;
+  color: #000;
 }
 
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  background: #000;
+  color: white;
+  border-radius: 20px;
+}
+
+.hero-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 30px;
   align-items: center;
-  padding: 4rem 2rem 2rem;
-  gap: 2rem;
+  margin-bottom: 40px;
 }
 
-header h1 {
-  font-size: 4rem;
+.hero-text h1 {
+  font-size: 60px;
   line-height: 1.1;
-  margin: 0 0 2rem;
+  font-weight: 700;
 }
 
-header button {
-  background: linear-gradient(to right, #fdd1a6, #fcb6ce);
+.hero-text button {
+  margin-top: 20px;
+  padding: 12px 24px;
   border: none;
-  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ffd2a0, #ff6584);
   font-weight: bold;
-  border-radius: 30px;
   cursor: pointer;
 }
 
-main {
+.hero-image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.info-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  padding: 2rem;
+  gap: 24px;
 }
 
 .card {
-  background: white;
-  padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 0 0 1px #eee;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-.avatar-row {
+.quote {
+  background: #e6e4f6;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.avatars {
+  margin-top: 12px;
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 8px;
 }
 
-.avatar-row img {
-  width: 40px;
-  height: 40px;
+.avatars img {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.image-block img {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  height: 100%;
-  max-height: 400px;
+.avatars span {
+  margin-left: 12px;
+  font-size: 12px;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #ffd2a0, #ff6584);
+  position: relative;
+  overflow: hidden;
+}
+
+.circle {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle at center, #c3e6f7, #ffe8f6);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
 }
