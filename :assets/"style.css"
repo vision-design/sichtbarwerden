@@ -1,0 +1,148 @@
+body {
+  background: #121212;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.raster-wrapper {
+  position: relative;
+  width: 606.5px; /* exakt wie das SVG */
+  height: 402.82px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.raster-wrapper img,
+.raster-wrapper svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* HERO TEXT */
+.hero-text {
+  position: absolute;
+  left: 44px;
+  top: 48px;
+  color: #181818;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  white-space: pre-line;
+  max-width: 250px;
+  pointer-events: none;
+}
+
+/* BUTTON */
+.btn-hero {
+  position: absolute;
+  left: 44px;
+  top: 190px;
+  padding: 14px 44px;
+  background: linear-gradient(90deg, #ffe1c9 0%, #ff7cae 100%);
+  color: #181818;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 2px 18px #ffb2d680;
+  cursor: pointer;
+  transition: transform 0.12s;
+}
+.btn-hero:hover {
+  transform: scale(1.05);
+}
+
+/* OBEN RECHTS: Hero Image */
+.hero-img {
+  position: absolute;
+  left: 313px;
+  top: 28px;
+  width: 247px;
+  height: 149px;
+  object-fit: cover;
+  border-radius: 0 18px 0 0;
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+/* QUOTE CARD */
+.quote-card {
+  position: absolute;
+  left: 41px;
+  top: 245px;
+  width: 180px;
+  height: 110px;
+  background: transparent;
+  color: #181818;
+  font-size: 0.98rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  pointer-events: none;
+}
+.quote-card .quote-text {
+  margin: 0 0 13px 0;
+  line-height: 1.3;
+}
+.quote-card .quote-link {
+  color: #757575;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+.quote-card .quote-icon {
+  position: absolute;
+  right: 9px;
+  top: 7px;
+  font-size: 2.3rem;
+  opacity: 0.16;
+  font-family: Arial, sans-serif;
+  pointer-events: none;
+}
+
+/* TEAM CARD */
+.team-card {
+  position: absolute;
+  left: 238px;
+  top: 245px;
+  width: 168px;
+  height: 110px;
+  background: transparent;
+  color: #181818;
+  font-size: 0.97rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 2;
+  pointer-events: none;
+}
+.team-card p {
+  font-size: 0.97rem;
+  font-weight: 700;
+  margin: 0 0 11px 0;
+  line-height: 1.2;
+}
+.avatars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 7px;
+}
+.avatars img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.team-card .team-label {
+  font-size: 0.83rem;
+  color: #222;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-left: 2px;
+}
