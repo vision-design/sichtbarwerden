@@ -1,10 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matcha Template Clone</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900,700,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,33 +17,35 @@
       <a href="#" class="contact">contact us</a>
     </nav>
   </header>
-
   <main>
-    <section class="hero">
-      <div class="left">
+    <section class="main-grid">
+      <div class="hero-card">
         <h1>Make<br>something<br>great</h1>
         <button>Let’s go</button>
       </div>
-      <div class="right">
-        <img src="https://via.placeholder.com/600x400" alt="Hero Image" />
+      <div class="hero-image-card">
+        <!-- Platzhalter-Bild, ggf. ersetzen -->
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Hero" />
+        <!-- Optional: für Deko wie Schrift-Elemente im Bild extra Layer einbauen -->
+        <div class="decor-text">motion</div>
+        <div class="decor-circle"></div>
+        <div class="decor-quote">*</div>
       </div>
-    </section>
-
-    <section class="bottom-grid">
-      <div class="card quote">
+      <div class="quote-card">
         <p>This example is inspired by the work of Halo Lab,<br>a design agency based in Ukraine.</p>
         <span>dribbble.com/halolab</span>
+        <svg class="quote-icon" width="30" height="30"><text x="0" y="25" font-size="30" font-family="Arial" fill="#2d2d2d">”</text></svg>
       </div>
-      <div class="card team">
-        <p><strong>We help businesses to<br>make their brands shine on all platforms.</strong></p>
+      <div class="team-card">
+        <p><strong>We help businesses to make their brands shine on all platforms.</strong></p>
         <div class="avatars">
-          <img src="https://via.placeholder.com/40" />
-          <img src="https://via.placeholder.com/40" />
-          <img src="https://via.placeholder.com/40" />
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="" />
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="" />
+          <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="" />
         </div>
         <span>MEET OUR DESIGNERS</span>
       </div>
-      <div class="card gradient"></div>
+      <div class="gradient-card"></div>
     </section>
   </main>
 </body>
