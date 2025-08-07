@@ -17,6 +17,8 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  pointer-events: none;
+  user-select: none;
 }
 
 /* HERO TEXT */
@@ -50,6 +52,7 @@ body {
   box-shadow: 0 2px 18px #ffb2d680;
   cursor: pointer;
   transition: transform 0.12s;
+  z-index: 2;
 }
 .btn-hero:hover {
   transform: scale(1.05);
